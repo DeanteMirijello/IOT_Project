@@ -1,0 +1,57 @@
+{
+  "adafruit": {
+    "username": "DMirijello",
+    "key": "aio_cCWL11fM3jAeqwR2rWdOYdwd2J5o"
+  },
+  "pins": {
+    "led_yellow": 21,
+    "led_green": 25,
+    "led_red": 16,
+    "servo": 12,
+    "pir": 26,
+    "dht_bcm": 6,
+    "buzzer": 5
+  },
+  "servo": {
+    "min_pulse_width": 0.0005,
+    "max_pulse_width": 0.0025,
+    "initial_angle": 0
+  },
+  "target_temp_c": 26.0,
+  "intervals": {
+    "sensor_publish_seconds": 30,
+    "heartbeat_seconds": 180
+  },
+  "rate_limits": {
+    "global_min_gap": 1.0,
+    "per_feed_min": {
+      "motion": 20.0,
+      "temperature": 30.0,
+      "humidity": 30.0,
+      "alerts": 20.0,
+      "led-yellow": 10.0,
+      "led-green": 10.0,
+      "led-red": 10.0,
+      "buzzer": 10.0,
+      "servo": 10.0,
+      "target-temp": 10.0
+    }
+  },
+  "motion": {
+    "edge_min_gap": 20.0,
+    "quiet_required": 5.0,
+    "warmup_seconds": 2.0
+  },
+  "feeds": [
+    "temperature",
+    "humidity",
+    "motion",
+    "alerts",
+    "led-yellow",
+    "led-green",
+    "led-red",
+    "buzzer",
+    "servo",
+    "target-temp"
+  ]
+}
