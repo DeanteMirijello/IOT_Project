@@ -27,6 +27,9 @@ Buzzer Murata 1
 
 Servo Motor
 
+Video
+
+https://www.youtube.com/shorts/p_izFyDbBKE 
 
 Setup Instructions
 Setup the pi sudo apt update && sudo apt upgrade -y sudo raspi-config # Enable Camera/I2C/SPI as needed
